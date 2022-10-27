@@ -9,6 +9,7 @@ RUN mkdir /usr/src/app \
 
 WORKDIR /usr/src/app
 
+ENV NODE_OPTIONS "--max_old_space_size=512"
 RUN npm install --unsafe-perm
 
 ENTRYPOINT ["/entrypoint.sh"]
