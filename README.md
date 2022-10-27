@@ -6,5 +6,5 @@
 
 ```
 export CROWI_VERSION=1.7.9
-docker build -t jinxiao/crowi:${CROWI_VERSION} .
+docker build --build-arg CROWI_VERSION=${CROWI_VERSION} -t jinxiao/crowi:${CROWI_VERSION} .
 ```

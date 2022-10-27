@@ -1,6 +1,7 @@
 FROM node:8
 
 ENV NODE_ENV production
+ARG CROWI_VERSION=1.7.9
 
 RUN mkdir /usr/src/app \
 	&& curl -SL https://github.com/crowi/crowi/archive/v${CROWI_VERSION}.tar.gz \
